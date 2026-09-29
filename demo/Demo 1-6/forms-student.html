@@ -20,7 +20,53 @@
             action="#" keeps this classroom demo on the same page.
             A real website would send the form data to a server for processing.
         -->
-        <form>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Interest</legend>
+                <label for="course">Which topic interests you the most?</label>
+                <select id="course" name="course">
+                    <option value="">Select a topic</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="programming">Programming</option>
+                    <option value="database">Database Management</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="cloud">Cloud Computing</option>
+                </select>
+
+                <p class="question">Which learning format do you prefer?</p>
+                <div class="choice-group">
+                    <input type="radio" id="in-person" name="format" value="in-person">
+                    <label for="in-person">In Person</label>
+
+                    <input type="radio" id="online" name="format" value="online">
+                    <label for="online">Online</label>
+                </div>
+
+                <label for="comments">Comments or Questions</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Enter your comments or questions here"></textarea>
+
+                <div class="choice-group">
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">Send me course updates.</label>
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
 
         </form>
     </main>
